@@ -1,0 +1,109 @@
+html body {
+    height: 100%;
+}
+
+.site{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding-top: 80px;
+}
+
+<<<<<<< HEAD
+=======
+#OutsideWrapper{
+   position: relative;
+   min-height:100%;
+}
+
+#InsideWrapper{
+  padding-bottom: 150px;
+  display: flex;
+}
+
+>>>>>>> master
+.box{
+  box-shadow: 0 16px 16px rgba(0,0,0,.16);
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.box:hover{
+  box-shadow: 0 20px 20px rgba(0,0,0,.24);
+  transform: translateY(-3px);
+}
+
+.header{
+  height: 80px;
+  background-color: #FFF;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  font-size: 18;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom : 1px solid #ddd;
+  padding: 0 100px;
+}
+
+.footer{
+  height:200px;
+  background-color: #F1F1F1;
+  /*
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -4px 4px rgba(0,0,0,.12);
+  transform: translateY(280px);
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  */
+}
+
+<<<<<<< HEAD
+.headerLink{
+  margin-right: 12px;
+}
+
+
+.login{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm{
+  margin-bottom: 20px;
+}
+
+.loginError{
+  color:#800000;
+}
+
+=======
+>>>>>>> master
+
+/* CSS React Transitions */
+.example-enter {
+  opacity: 0;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
