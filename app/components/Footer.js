@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import * as playlistReducer from '../reducers/playlists'
 import * as authReducer from '../reducers/auth'
 
 
@@ -15,7 +14,6 @@ class Footer extends Component{
   }
 
   componentWillReceiveProps(nextProps){
-
   }
 
   render(){
@@ -29,7 +27,7 @@ class Footer extends Component{
 }
 
 export default connect(
-    ({auth,playlists})=>({
+    ({auth})=>({
       uid: auth.uid,
       username : auth.username,
     })

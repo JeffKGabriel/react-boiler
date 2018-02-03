@@ -9,6 +9,7 @@ import Favicon from 'react-favicon'
 
 import Home from './Home.js'
 import Waffles from './Waffles.js'
+import User from './User.js'
 import Login from './Login.js'
 
 import {getUser} from '../reducers/auth'
@@ -30,6 +31,7 @@ class Main extends Component{
           <Switch>
               <Route exact path='/' component={Home}/>
               <Route path='/login' component={Login} />
+              <Route path='/user' component={User} />
               <Route path='/waffles' component={Waffles} />
           </Switch>
         </main>

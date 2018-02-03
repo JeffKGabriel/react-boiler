@@ -11,10 +11,8 @@ import path from '../reducers/path.js'
 
 const store = createStore(
   combineReducers({
-    //reducer,
     path,
     auth,
-    // routing: routerReducer
   }),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   applyMiddleware(thunk)

@@ -19,14 +19,11 @@ class Login extends Component{
   }
 
   componentWillMount(){
-    console.log("home props",this.props)
     this.props.dispatch(updatePath(this.props.location.pathname))
   }
 
   componentWillReceiveProps(nextProps){
-    console.log("nextProps",nextProps);
     if(this.props.authed != nextProps.authed && nextProps.authed){
-      console.log("logged in - pushingg to home")
       this.props.history.push("/")
     }
   }

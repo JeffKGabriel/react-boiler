@@ -10,7 +10,6 @@ class Waffles extends Component{
   }
 
   componentWillMount(){
-    console.log("home props",this.props)
     this.props.dispatch(updatePath(this.props.location.pathname))
   }
 

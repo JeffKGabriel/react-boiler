@@ -13,8 +13,6 @@ html body {
   padding-top: 80px;
 }
 
-<<<<<<< HEAD
-=======
 #OutsideWrapper{
    position: relative;
    min-height:100%;
@@ -25,7 +23,6 @@ html body {
   display: flex;
 }
 
->>>>>>> master
 .box{
   box-shadow: 0 16px 16px rgba(0,0,0,.16);
   transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -52,7 +49,7 @@ html body {
 }
 
 .footer{
-  height:200px;
+  height:150px;
   background-color: #F1F1F1;
   /*
   position: fixed;
@@ -63,7 +60,6 @@ html body {
   */
 }
 
-<<<<<<< HEAD
 .headerLink{
   margin-right: 12px;
 }
@@ -85,8 +81,6 @@ html body {
   color:#800000;
 }
 
-=======
->>>>>>> master
 
 /* CSS React Transitions */
 .example-enter {

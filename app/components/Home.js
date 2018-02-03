@@ -14,16 +14,10 @@ class Home extends Component{
   }
 
   componentWillMount(){
-    console.log("home props",this.props)
     this.props.dispatch(updatePath(this.props.location.pathname))
   }
 
-  componentWillReceiveProps(nextProps){
-    console.log("nextProps",nextProps);
-  }
-
   render(){
-    //Container for the channel List
     return(
       <div style={{}}>
         hi
