@@ -14,6 +14,7 @@ npm run watch
 ```
 
 **FireBase**
+
 Replace app/config/constants.js with firebase creds
 ```
 apiKey: "#################",
