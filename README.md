@@ -1,4 +1,4 @@
-# react-redux-boiler
+# react-redux-boiler :ghost:
 
 **Setup**
 
