@@ -12,14 +12,14 @@ import Waffles from './Waffles.js'
 import User from './User.js'
 import Login from './Login.js'
 
-import {getUser} from '../reducers/auth'
+// import {getUser} from '../reducers/auth'
 
 require('../styles/index.css');
 
 class Main extends Component{
 
   componentWillMount(){
-    this.props.dispatch(getUser())
+    // this.props.dispatch(getUser())
   }
 
   render(){
