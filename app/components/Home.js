@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+/*
 import firebase from 'firebase'
 import {ref, firebaseAuth} from '../config/constants'
 import fireAuth from '../helpers/fireAuth'
+*/
+
 import {updatePath} from '../reducers/path'
 
 
@@ -20,7 +23,7 @@ class Home extends Component{
   render(){
     return(
       <div style={{}}>
-        hi
+        home
       </div>
     )
   }

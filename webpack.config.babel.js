@@ -13,7 +13,6 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 })
 
-
 module.exports = {
   entry: ['babel-polyfill', PATHS.app],
   output: {

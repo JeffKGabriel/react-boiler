@@ -2,15 +2,17 @@ var express = require('express');
 var path = require('path');
 
 var site = express();
+var port = 8080;
 
 site.use('/', express.static(path.resolve(__dirname, 'dist')));
 
-site.listen(80, function () {
-  console.log('site served on port :80');
+site.listen(port, ()=>{
+  console.log('site served on port :',port);
 })
 
 //serve api
 
+/*
 var api = require('./api/index');
 var router = require('./api/router');
 
@@ -19,6 +21,7 @@ api.listen(8888);
 console.log("api started on port :8888");
 
 module.exports = api;
+*/
 
 
 //ssl

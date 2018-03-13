@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+/*
 import firebase from 'firebase'
 import {ref, firebaseAuth} from '../config/constants'
 import fireAuth from '../helpers/fireAuth'
-import {updatePath} from '../reducers/path'
 import {addUserToFireBase, logoutUser, loginUser} from '../reducers/auth'
+*/
+
+import {updatePath} from '../reducers/path'
 
 
 class Login extends Component{
@@ -37,7 +40,8 @@ class Login extends Component{
   }
 
   handleNewUser=()=>{
-    this.props.dispatch(addUserToFireBase(this.state.email,this.state.password))
+    console.log('add user to firebase');
+    // this.props.dispatch(addUserToFireBase(this.state.email,this.state.password))
   }
 
   handleLogOut=()=>{
@@ -45,11 +49,12 @@ class Login extends Component{
   }
 
   handleLogin=()=>{
-    this.props.dispatch(loginUser(this.state.email,this.state.password))
+    console.log('login user to firebase');
+    // this.props.dispatch(loginUser(this.state.email,this.state.password))
   }
 
   render(){
-    //Container for the channel List
+
     return(
       <div className='login'>
           <div className='loginForm'>
@@ -83,6 +88,4 @@ let mapStateToProps=({auth})=>{
   }
 }
 
-export default connect(
-  mapStateToProps
-)(Login)
+export default connect(mapStateToProps)(Login)

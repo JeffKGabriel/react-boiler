@@ -1,23 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 
-import * as authReducer from '../reducers/auth'
-
+// import * as authReducer from '../reducers/auth'
 
 
 class Footer extends Component{
 
-  constructor (props) {
-    super(props)
-
-  }
-
-  componentWillReceiveProps(nextProps){
-  }
-
   render(){
-
     return(
       <div className="footer col-xs-12">
         footer
@@ -26,9 +15,11 @@ class Footer extends Component{
   }
 }
 
-export default connect(
-    ({auth})=>({
-      uid: auth.uid,
-      username : auth.username,
-    })
-)(Footer)
+let mapStateToProps=({auth})=>{
+  return{
+    uid: auth.uid,
+    username : auth.username,
+  }
+}
+
+export default connect(mapStateToProps)(Footer)

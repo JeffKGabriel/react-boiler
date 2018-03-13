@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+
 import {updatePath} from '../reducers/path'
 
 
@@ -24,12 +25,10 @@ class Waffles extends Component{
   }
 }
 
-// Map Redux state to component props
-function mapStateToProps(state) {
-  console.log("state",state);
+function mapStateToProps({path}) {
   return {
-    //value: state.counter.count
+    path: path.path
   }
 }
 
-export default connect()(Waffles)
+export default connect(mapStateToProps)(Waffles)
