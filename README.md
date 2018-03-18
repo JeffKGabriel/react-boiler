@@ -1,3 +1,5 @@
+![alt text](https://img.shields.io/badge/🔥-Blazing%20Fast-red.svg) ![alt text](https://img.shields.io/badge/👌-Production Ready-00ddcc.svg)
+
 # react-redux-boiler :ghost:
 
 **Setup**
