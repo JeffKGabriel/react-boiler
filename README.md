@@ -1,6 +1,8 @@
 ![alt text](https://img.shields.io/badge/🔥-Blazing%20Fast-red.svg) 
 ![alt text](https://img.shields.io/badge/👌-Production%20Ready-00ddcc.svg) 
 ![alt text](https://img.shields.io/badge/🐛-Bug%20Free-green.svg) 
+![alt text](https://img.shields.io/badge/🔐-Totally%20Secure-yellow.svg) 
+![alt text](https://img.shields.io/badge/🦋-Extremely%20Lightweight-7799cc.svg) 
 
 # react-redux-boiler :ghost:
 
